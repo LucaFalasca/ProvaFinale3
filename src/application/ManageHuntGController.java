@@ -106,10 +106,6 @@ public class ManageHuntGController{
     	//TODO
     }
 
-    @FXML
-    void handleChooseMap(ActionEvent event) {
-    	//TODO 
-    }
     
     @FXML
     void handleAddClue(ActionEvent event) {
