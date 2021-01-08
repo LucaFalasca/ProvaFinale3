@@ -3,7 +3,7 @@
               Any modifications will be overwritten.
               To include a user specific buildfile here, simply create one in the same
               directory with the processing instruction <?eclipse.ant.import?>
-              as the first entry and export the buildfile again. --><project basedir="." default="build" name="ProvaFinale3">
+              as the first entry and export the buildfile again. --><project basedir="." default="build" name="ProvaFinale3.1">
     <property environment="env"/>
     <property name="ECLIPSE_HOME" value="../../eclipse/java-2020-09/eclipse/"/>
     <property name="debuglevel" value="source,lines,vars"/>
@@ -36,7 +36,7 @@
         <pathelement location="../../.p2/pool/plugins/org.hamcrest.core_1.3.0.v20180420-1519.jar"/>
     </path>
     <path id="JavaFX SDK.libraryclasspath"/>
-    <path id="ProvaFinale3.classpath">
+    <path id="ProvaFinale3.1.classpath">
         <pathelement location="bin"/>
         <path refid="JavaFx.userclasspath"/>
         <path refid="JUnit 5.libraryclasspath"/>
@@ -61,7 +61,7 @@
         <echo message="${ant.project.name}: ${ant.file}"/>
         <javac debug="true" debuglevel="${debuglevel}" destdir="bin" includeantruntime="false" source="${source}" target="${target}">
             <src path="src"/>
-            <classpath refid="ProvaFinale3.classpath"/>
+            <classpath refid="ProvaFinale3.1.classpath"/>
         </javac>
     </target>
     <target description="Build all projects which reference this project. Useful to propagate changes." name="build-refprojects"/>
